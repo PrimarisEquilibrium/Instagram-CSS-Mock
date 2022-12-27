@@ -1,0 +1,77 @@
+.app-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    width: 310px;
+    padding: 8px 12px 20px 12px;
+    border-right: 1px solid rgb(255, 255, 255, 0.15);
+}
+
+.logo-container {
+    cursor: pointer;
+    padding: 32px 12px 28px 12px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 4px 0px;
+    transition: transform 0.15s,
+        border-radius 0.15s,
+        background-color 0.15s;
+}
+
+.item:hover {
+    background-color: rgb(24, 24, 24);
+    border-radius: 30px;
+}
+
+.item:hover .icon {
+    transform: scale(1.05);
+}
+
+.space {
+    flex: 1;
+    align-items: flex-end;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.noti {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user-profile-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.notification-circle {
+    z-index: 100;
+    position: absolute;
+    top: -2px;
+    right: 12px;
+    border: 1px solid black;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: red;
+}
